@@ -1,0 +1,758 @@
+
+/* ---------- TABLE OF CONTENTS ---------- *\
+- FONTS
+- OVERALL WEBSITE
+- HEADER
+- DESKTOP SCREEN
+- BANNER
+- MAIN SECTION
+- FOOTER
+ \* ---------------------------------------*/
+
+
+
+/* ---------------------------------------*\
+                FONTS
+\* ---------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Kavivanar|Playfair+Display);
+
+
+/* ---------------------------------------*\
+             OVERALL WEBSITE
+\* ---------------------------------------*/
+
+/* removing default margin and padding*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html
+{
+    position: relative;
+    min-height: 100%;
+}
+
+/* removing underline from all links */
+a
+{
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #fff;
+}
+
+
+/* ---------------------------------------*\
+             HEADER
+\* ---------------------------------------*/
+
+
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+header .header-brand {
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    font-weight: 900;
+    color: #111;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 12px 0;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 10px;
+}
+
+header nav ul li a {
+    font-family: "Playfair Display", serif;
+    font-size: 12px;
+    color: #111;
+}
+
+
+/* ---------------------------------------*\
+    HEADER STYLING FOR THE DESKTOP SCREEN
+\* ---------------------------------------*/
+
+@media only screen and (min-width: 1000px) {
+    header .header-brand {
+        font-size: 30px;
+        margin: 31px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }
+    header nav ul {
+        float: left;
+        margin: 20px 0 0 20px;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+        color: #111;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+}
+
+
+/* ---------------------------------------*\
+             BANNER
+\* ---------------------------------------*/
+
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2 {
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 70px;
+}
+
+.index-banner h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 420px;
+}
+
+/* ---------------------------------------*\
+     BANNER STYLING FOR THE DESKTOP SCREEN
+\* ---------------------------------------*/
+
+@media only screen and (min-width: 1000px) {
+    .index-banner {
+        width: 100%;
+        height:450px;
+    }
+
+    .index-banner h2 {
+        display: none;
+    }
+
+    .index-banner h1 {
+        font-size: 50px;
+    }
+}
+
+
+
+/* ---------------------------------------*\
+             MAIN CONTENT
+\* ---------------------------------------*/
+
+.wrapper {
+    margin: 0 auto;
+    margin-top: 20px;
+    border-top: 	5px solid black;
+    border-bottom: 	5px solid black;
+}
+
+.index-links div {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 450px;
+    background-color: #f2f2f2;
+}
+
+main p{
+
+    margin: 15px;
+    text-align: center;
+    color: #111;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 12px;
+}
+
+.index-links div h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 33px;
+    color: #111;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.icon {
+    display: block;
+}
+
+.image {
+    display: none;
+}
+
+
+
+/* ---------------------------------------*\
+   MAIN CONTENT STYLING FOR DESKTOP SCREEN
+\* ---------------------------------------*/
+
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 80%;
+        padding: 30px;
+        margin: 40px auto;
+        margin-top: 20px;
+        border-top: 	5px solid black;
+        border-bottom: 	5px solid black;
+    }
+
+    .index-links div {
+        margin: 10px 10px 0;
+        height: 500px;
+    }
+
+    .index-links div h3 {
+        margin-left: 200px;
+        text-align: left;
+    }
+
+    main p{
+        font-size: 18px;
+        width: 500px;
+        float: left;
+        text-align: center;
+    }
+
+    .icon {
+        margin-left: 20px;
+        display: block;
+        float: left;
+    }
+
+    .image {
+        display: block;
+        margin-top: -40px;
+        margin-right: 10px;
+        float: right;
+    }
+}
+
+/* ---------------------------------------*\
+             FORM STYLING
+\* ---------------------------------------*/
+
+#formImage {
+    display: none;
+}
+
+.formHolder {
+    padding: 30px;
+    margin: 40px auto;
+    background: #FFFFFF;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.formHolder .inner-wrap {
+    padding: 30px;
+    background: #F8F8F8;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.formHolder h1 {
+    background: #2A88AD;
+    padding: 20px 30px 15px 30px;
+    margin: -30px -30px 30px -30px;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px "Playfair Display", serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #157C9E;
+}
+
+.formHolder h1 > span {
+    display: block;
+    margin-top: 2px;
+    font: 13px "Century Gothic", sans-serif;
+}
+
+.formHolder label {
+    display: block;
+    font: 13px "Century Gothic", sans-serif;
+    color: #888888;
+    margin-bottom: 5px;
+}
+
+.formHolder input[type="text"],
+.formHolder input[type="date"],
+.formHolder input[type="datetime"],
+.formHolder input[type="email"],
+.formHolder input[type="number"],
+.formHolder input[type="search"],
+.formHolder input[type="time"],
+.formHolder input[type="url"],
+.formHolder input[type="password"],
+.formHolder textarea,
+.formHolder select {
+    display: block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border: 2px solid #FFFFFF;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.formHolder .section {
+    font: normal 20px "Playfair Display", serif;
+    color: #2A88AD;
+    margin-bottom: 5px;
+}
+
+.formHolder .section span {
+    background: #2A88AD;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 4px solid #FFFFFF;
+    font-size: 14px;
+    margin-left: -33px;
+    color: #FFFFFF;
+    margin-top: -3px;
+}
+
+.formHolder input[type="button"],
+.formHolder input[type="submit"] {
+    background: #2A88AD;
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px "Playfair Display", serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #257C9E;
+    font-size: 15px;
+}
+
+.formHolder input[type="button"]:hover,
+.formHolder input[type="submit"]:hover {
+    background: #2A6881;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+
+
+/* ---------------------------------------*\
+        FORM STYLING FOR DESKTOP
+\* ---------------------------------------*/
+
+@media only screen and (min-width: 1000px) {
+    #formImage {
+        display: inline;
+        float: right;
+        width: 40%;
+    }
+
+
+    form {
+        width: 50%;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    .formHolder .section {
+        margin-bottom: 15px;
+    }
+
+    .formHolder input[type="button"],
+    .formHolder input[type="submit"] {
+        margin-top: 70px;
+    }
+
+}
+
+
+/* ---------------------------------------*\
+            OUTPUT PAGE STYLING
+\* ---------------------------------------*/
+
+.infoHolder {
+    padding: 30px;
+    margin: 40px auto;
+    background: #FFFFFF;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.infoHolder h1 {
+    background: #2A88AD;
+    padding: 20px 30px 15px 30px;
+    margin: -30px -30px 30px -30px;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px "Playfair Display", serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #157C9E;
+}
+
+.infoHolder h2 {
+    text-align: center;
+    font: bold 20px "Playfair Display", serif;
+}
+
+#facilityChoiceLarge {
+    display: none;
+}
+
+#facilityChoiceSmall {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.infoHolder button {
+    margin: auto;
+    display: block;
+    background: #2A88AD;
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px "Playfair Display", serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #257C9E;
+    font-size: 15px;
+}
+
+.infoHolder button:hover {
+    background: #2A6881;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+
+/* ---------------------------------------*\
+      OUTPUT PAGE STYLING FOR DESKTOP
+\* ---------------------------------------*/
+
+@media only screen and (min-width: 1000px) {
+    .infoHolder {
+        width: 60%;
+    }
+
+    .infoHolder h2 {
+        width: 100%;
+        text-align: center;
+        font-family: "Playfair Display", serif;
+    }
+
+    .infoHolder h3 {
+        width: 100%;
+        text-align: center;
+        font-family: "Playfair Display", serif;
+    }
+
+    .infoHolder p {
+        width: 100%;
+        text-align: center;
+    }
+
+    #facilityChoiceLarge {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    #facilityChoiceSmall {
+        display: none;
+    }
+
+
+    #user-info{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .infoHolder button {
+        width: 50%;
+    }
+
+
+
+}
+
+/* ---------------------------------------*\
+          RESPONSIVE ADMIN PAGE
+\* ---------------------------------------*/
+@media only screen and (min-width: 240px) and (max-width: 560px) {
+
+
+    #admin-table {
+        width: 100%;
+    }
+
+    table tr {
+        width: 100%;
+        margin-left: 20px;
+        display: block;
+        margin-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid black;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 1px;
+    }
+
+}
+
+
+
+
+    /* ---------------------------------------*\
+                 ADMIN PAGE DESKTOP
+    \* ---------------------------------------*/
+    @media only screen and (min-width: 1000px) {
+        .table-wrapper {
+            padding: 30px;
+            margin: 40px auto;
+            border-top: 5px solid black;
+            border-bottom: 5px solid black;
+            width: 94%;
+        }
+
+        table {
+            width: 100%;
+            font-family: "Century Gothic", sans-serif;
+            font-size: 1em;
+            border-collapse: collapse;
+        }
+
+        tr {
+            border: 1px solid black;
+            margin-bottom: 1.5em;
+        }
+
+        tr:nth-of-type(odd) {
+            background: #fff;
+        }
+
+        tr:nth-of-type(even) {
+            background: #eee;
+        }
+
+        th {
+            background: #000000;
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        td, th {
+            padding: 0.75em;
+            text-align: left;
+        }
+
+        td {
+            border: 1px solid black;
+            word-wrap: break-word;
+        }
+
+        td:before {
+            content: attr(data-th);
+            font-weight: 600;
+        }
+    }
+
+
+/* ---------------------------------------*\
+                 CREDITS PAGE
+\* ---------------------------------------*/
+.credits-wrapper {
+    margin-top: 20px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    width: 100%;
+}
+
+.credits-headings {
+    margin: 15px;
+    color: #111;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.credits-sub {
+    margin: 15px;
+    color: gray;
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.credits-p {
+    text-align: center;
+    color: #111111;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 12px;
+
+
+}
+
+/* ---------------------------------------*\
+            CREDITS PAGE DESKTOP
+\* ---------------------------------------*/
+@media only screen and (min-width: 1000px) {
+    .credits-wrapper {
+        margin: 20px auto;
+        padding: 30px;
+        min-height: 1060px;
+        width: 70%;
+    }
+
+    .credits-p {
+        width: 100%;
+    }
+
+
+
+
+
+}
+
+
+    /* ---------------------------------------*\
+                 FOOTER
+    \* ---------------------------------------*/
+    footer {
+        width: calc(100% - 80px);
+        padding: 40px 40px;
+        margin-top: 20px;
+        background-color: #111;
+        overflow: hidden;
+    }
+
+    .program {
+        color: #fff;
+        width: fit-content;
+        float: left;
+        padding-left: 20px;
+    }
+
+    footer p {
+        font-family: "Kavivanar", cursive;
+        font-size: 14px;
+        display: block;
+        color: #fff;
+    }
+
+    .news {
+        color: #fff;
+        display: none;
+    }
+
+    .copyright {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+
+    /* ---------------------------------------*\
+          FOOTER STYLING FOR DESKTOP SCREEN
+    \* ---------------------------------------*/
+    @media only screen and (min-width: 1000px) {
+        .news {
+            color: #fff;
+            display: block;
+            float: right;
+            width: 500px;
+        }
+
+
+    }
+

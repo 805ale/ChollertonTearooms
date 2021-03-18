@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chollerton tearooms | Find out more</title>
+    <!--Set viewport size and scale!-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Linking to stylesheet-->
+    <link href="stylesheet2.css" rel="stylesheet" type="text/css">
+
+    <!--Fonts!-->
+    <!--Font - Playfair Display, Kavivanar - Linked from Google Fonts!-->
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar|Playfair+Display" rel="stylesheet">
+    <!-- Font - Lobster - Linked from Google Fonts!-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" >
+</head>
+<body>
+<!--Header!-->
+<header>
+    <a href="index.html" class="header-brand">Chollerton Tearooms</a>
+    <!--Main navigation!-->
+    <nav>
+        <ul>
+            <li class="active"> <a href="index.html" title="home page" accesskey="h"> Home</a> </li>
+            <li> <a href="moreinfo.html" title="info" accesskey="i"> Find out more</a> </li>
+            <li> <a href="admin.php" title="admin" accesskey="a"> Admin page</a> </li>
+            <li> <a href="credits.html" title="credits" accesskey="c"> Credits page</a> </li>
+            <li> <a href="https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/fileexport/Export_Dcd988950bbaeb157bd7a34c7b6043d57.pdf" title="wireframe" accesskey="w"> Wireframe</a> </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!--Banner!-->
+<section class="index-banner">
+    <div class="vertical-center">
+        <h1>Want more information?</h1>
+    </div>
+</section>
+
+
+
+
+    <!--Box to hold the form-->
+    <article class="formHolder">
+        <!-- Image only visible on large screens-->
+        <img id="formImage" src="form.jpg" alt="form image" height="900">
+
+        <form id="userInfo" action="yourinfo.php" method="get">
+            <h1> Fill in your details below! <span>Fields marked with an asterisk (*) are required</span></h1>
+            <!-- Section for the name and address-->
+            <div class="section"><span>1</span>Your name and address</div>
+            <div class="inner-wrap">
+                <label>Your First Name* <input type="text" name="fName" id="fName" maxlength="50" tabindex="1" accesskey="f" /> </label>
+                <label>Your Surname* <input type="text" name="sName" id="sName" maxlength="50" tabindex="2" accesskey="s" /> </label>
+                <label>Address <textarea name="address" id="address" maxlength="100" tabindex="3" accesskey="a"></textarea> </label>
+            </div>
+
+            <!--Section for the email and phone number-->
+            <div class="section"><span>2</span>Email and phone</div>
+            <div class="inner-wrap">
+                <label>Email Address* <input type="email" name="eMail" id="eMail" maxlength="50" tabindex="4" accesskey="e" /> </label>
+                <label>Landline telephone number <input type="text" name="telNo" maxlength="20" tabindex="5" accesskey="t" /> </label>
+                <label>Mobile phone number <input type="text" name="mobNo" maxlength="20" tabindex="6" accesskey="m" /> </label>
+            </div>
+
+            <!--Section for choosing preferred contact method and for selecting a category of facility that they are particularily interested in finding more-->
+            <div class="section"><span>3</span>Information to receive</div>
+            <div>
+                <label>
+                    Preferred contact choice: *
+                    <select name="contactChoice" id="contactChoice" tabindex="7" accesskey="c">
+                        <option value="email">Email</option>
+                        <option value="sms">SMS</option>
+                        <option value="post">Post</option>
+                    </select>
+                </label>
+                <label>
+                    Choose which category you are interested in finding out more: *
+                    <select name="facilityChoice" id="facilityChoice" tabindex="8" accesskey="a">
+                        <option value="Bed and Breakfast">Bed and Breakfast</option>
+                        <option value="Craft Shop">Craft Shop</option>
+                        <option value="Post Office">Post Office</option>
+                        <option value="Tearoom">Tearoom</option>
+                        <option value="Village Store">Village Store</option>
+                    </select>
+                </label>
+            </div>
+
+            <!--Submit button-->
+            <div class="button-section">
+                <input type="submit" name="Send" tabindex="9" accesskey="t"/>
+            </div>
+        </form>
+    </article>
+</main>
+
+<!--Footer-->
+<!--Footer-->
+<footer>
+    <!--Opening hours!-->
+    <div class="program">
+        <h4>HOURS</h4>
+        <p>Monday - Friday 8am - 11pm</p>
+        <p>Saturday 9 am - 11pm</p>
+        <p>Sunday 10am - 11pm</p>
+    </div>
+
+    <!--News section!-->
+    <div class="news">
+        <h4>NEWS</h4>
+        <p>"A tearoom and cafe for food lovers.  On December 20, Chollerton Tearooms will be unveiled to the public so keep this date free in your dairy! I cannot wait to get there!" <br> -Jane Doe for theDailyProphet.co.uk</p>
+    </div>
+    <p class="copyright">© Chollerton Tearooms <br> Designed by Alexandra Vaida </p>
+</footer>
+</body>
+</html>
